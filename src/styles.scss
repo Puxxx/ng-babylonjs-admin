@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body,
+app-root,
+app-starter {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#renderCanvas {
+  width: 680px;
+  height: 320px;
+  touch-action: none;
+}
+
+#renderCanvas:focus {
+  outline: none;
+}
