@@ -47,4 +47,4 @@ Thumbs.db
 # /userscript
 
 # Only exists if Bazel was run
-# /bazel-out
+# /bazel-out1 
