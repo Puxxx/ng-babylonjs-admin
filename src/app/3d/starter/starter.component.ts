@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DemoService } from '../../shared/service/demo.service';
+import { BasicService } from 'src/app/shared/service/basic.service';
 
 @Component({
   selector: 'app-starter',
@@ -10,10 +11,12 @@ export class StarterComponent implements OnInit {
 
   private canEleId = 'renderCanvas';
 
-  constructor(private engServ: DemoService) { }
+  constructor(private engServ: BasicService) { 
+    engServ = new BasicService(this.canEleId)
+  }
 
   ngOnInit() {
-    this.engServ.createScene(this.canEleId);
+    this.engServ.addMesh();
     this.engServ.animate();
   }
 }

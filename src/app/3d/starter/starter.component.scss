@@ -1,0 +1,9 @@
+#renderCanvas {
+    width: 800px;
+    height: 600px;
+    touch-action: none;
+  }
+  
+  #renderCanvas:focus {
+    outline: none;
+  }

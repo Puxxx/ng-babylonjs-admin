@@ -17,12 +17,3 @@ body {
   background: #f5f5f5;
 }
 
-#renderCanvas {
-  width: 680px;
-  height: 320px;
-  touch-action: none;
-}
-
-#renderCanvas:focus {
-  outline: none;
-}
